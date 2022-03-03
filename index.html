@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./dist/output.css">
+        <title> Tailwind SaaS Website / github.com/aemirdnr </title>
+        <script>
+            function navMenu() {
+                var x = document.getElementById("mobileMenu");
+                if(x.style.display === "block") {
+                    x.style.display = "none";
+                }
+                else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="font-mono bg-gradient-to-l from-blue-300 to-blue-600">
+            <!-- Navbar -->
+            <div class="flex h-24 shadow justify-center items-center text-center bg-black">
+                <div class="flex-1 justify-center items-start">
+                   <a href="./index.html"> <img class="m-auto w-24" src="./img/logo.png"> </a> 
+                </div>
+                <div class="hidden md:inline flex-1">
+                    <ul class="inline-flex text-white">
+                        <li class="px-3 lg:px-8 rounded"> <a href="" class="rounded-md p-2 hover:bg-blue-500"> Homepage </a> </li>
+                        <li class="px-3 lg:px-8"> <a href="" class="rounded-md p-2 hover:bg-blue-500"> Docs </a> </li>
+                        <li class="px-3 lg:px-8"> <a href="#pricing" class="rounded-md p-2 hover:bg-blue-500"> Pricing </a> </li>
+                        <li class="px-3 lg:px-8"> <a href="" class="rounded-md p-2 hover:bg-blue-500"> Contact </a> </li>
+                    </ul>
+                </div>
+                <div class="flex-1 text-white text-center">
+                    <button class="rounded-3xl hover:bg-gray-900 md:hidden" onclick="navMenu()">
+                        <img class="m-auto w-12 p-2"  src="./img/menu.png" alt="alt menu">
+                    </button>
+                    <button class="hidden rounded px-3 py-2 text-black bg-white hover:bg-blue-500 hover:text-white md:inline">
+                        <span> Login </span> 
+                    </button>
+                    <button class="hidden rounded px-3 py-2 text-black bg-white hover:bg-blue-500 hover:text-white md:inline">
+                        <span> Sign Up </span> 
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Nav -->
+            <div id="mobileMenu" class="hidden w-4/5 m-auto shadow bg-white justify-center items-center md:invisible">
+                <ul class="flex flex-col ">
+                    <a href=""><li class="py-1 px-8 border-b border-blue-400 hover:bg-blue-400 hover:text-white"> Homepage </li></a>
+                    <a href=""><li class="py-1 px-8 border-b border-blue-400 hover:bg-blue-400 hover:text-white"> Docs </li></a>
+                    <a href="#pricing"><li class="py-1 px-8 border-b border-blue-400 hover:bg-blue-400 hover:text-white"> Pricing </li></a>
+                    <a href=""><li class="py-1 px-8 border-b border-blue-400 hover:bg-blue-400 hover:text-white"> Contact </li></a>
+                    <a href=""><li class="py-1 px-8 border-b border-blue-400 hover:bg-blue-400 hover:text-white"> Login </li></a>
+                    <a href=""><li class="py-1 px-8 hover:bg-blue-400 hover:text-white"> Sign Up </li></a>
+                </ul>
+            </div>
+            <!-- Content Section -->
+            <div class="flex flex-col mt-16 justify-center items-center text-center">
+                <div class="flex w-full items-center md:h-[486px] bg-[url('../img/image-4.png')] bg-contain bg-no-repeat" style="background-position: 75% 40%;">
+                    <div class="flex-1 p-4 text-lg font-light">
+                        <h1 class="px-6 md:px-8 lg:px-12 text-left leading-snug text-[28px] font-bold">
+                            <p >
+                                Modern and Fast
+                                <br>
+                                Design
+                            </p>
+                        </h1>
+                        <p class="px-6 md:px-8 lg:px-12 py-4 text-left leading-snug font-thin text-white">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vestibulum aliquam imperdiet dui, non fermentum elit lobortis non.
+                            Cras quam nisl, tempus sit amet condimentum vestibulum, euismod in ipsum.
+                        </p>
+                        <button class="rounded p-3 bg-white hover:bg-slate-100">
+                            <span class="text-sm"> Sign Up </span>
+                        </button>
+                    </div>
+                    <div class="flex-1">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Pricing Section -->
+            <div id="pricing" class="flex flex-col mt-16 lg:flex-row md:px-16 md:py-16 w-full justify-center items-center">
+                <div class="lg:mr-14 bg-white h-auto w-3/5 lg:w-2/5 shadow">
+                    <h1 class="text-center text-xl font-bold p-6 bg-blue-800 text-white">
+                        One Month
+                        <p>
+                            5$
+                        </p>
+                    </h1>
+                    <ul>
+                        <li class="px-8 py-2 border-b"> User Friendly </li>
+                        <li class="px-8 py-2 border-b"> Fair Price </li>
+                        <li class="px-8 py-2 border-b"> Modern Design </li>
+                        <li class="px-8 py-2 border-b"> Fast Build </li>
+                        <li class="px-8 py-2 border-b"> Active Support </li>
+                    </ul>
+                    <button class="flex m-auto rounded p-3 mt-4 mb-4 bg-blue-800 hover:bg-blue-900">
+                        <span class="text-white"> Subscribe </span>
+                    </button>
+                </div>
+                <div class="mt-12 lg:mt-0 lg:mr-14 bg-white h-auto w-3/5 lg:w-2/5 shadow">
+                    <h1 class="text-center text-xl font-bold p-6 bg-blue-800 text-white">
+                        Three Month
+                        <p>
+                            12$
+                        </p>
+                    </h1>
+                    <ul>
+                        <li class="px-8 py-2 border-b"> User Friendly </li>
+                        <li class="px-8 py-2 border-b"> Fair Price </li>
+                        <li class="px-8 py-2 border-b"> Modern Design </li>
+                        <li class="px-8 py-2 border-b"> Fast Build </li>
+                        <li class="px-8 py-2 border-b"> Active Support </li>
+                    </ul>
+                    <button class="flex m-auto rounded p-3 mt-4 mb-4 bg-blue-800 hover:bg-blue-900">
+                        <span class="text-white"> Subscribe </span>
+                    </button>
+                </div>
+                <div class="mt-12 lg:mt-0 lg:mr-14 bg-white h-auto w-3/5 lg:w-2/5 shadow">
+                    <h1 class="text-center text-xl font-bold p-6 bg-blue-800 text-white">
+                        Six Month
+                        <p>
+                            20$
+                        </p>
+                    </h1>
+                    <ul>
+                        <li class="px-8 py-2 border-b"> User Friendly </li>
+                        <li class="px-8 py-2 border-b"> Fair Price </li>
+                        <li class="px-8 py-2 border-b"> Modern Design </li>
+                        <li class="px-8 py-2 border-b"> Fast Build </li>
+                        <li class="px-8 py-2 border-b"> Active Support </li>
+                    </ul>
+                    <button class="flex m-auto rounded p-3 mt-4 mb-4 bg-blue-800 hover:bg-blue-900">
+                        <span class="text-white"> Subscribe </span>
+                    </button>
+                </div>
+                <div class="mt-12 mb-12 lg:mt-0 lg:mb-0 bg-white h-auto w-3/5 lg:w-2/5 shadow">
+                    <h1 class="text-center text-xl font-bold p-6 bg-blue-800 text-white">
+                        One Year
+                        <p>
+                            35$
+                        </p>
+                    </h1>
+                    <ul>
+                        <li class="px-8 py-2 border-b"> User Friendly </li>
+                        <li class="px-8 py-2 border-b"> Fair Price </li>
+                        <li class="px-8 py-2 border-b"> Modern Design </li>
+                        <li class="px-8 py-2 border-b"> Fast Build </li>
+                        <li class="px-8 py-2 border-b"> Active Support </li>
+                    </ul>
+                    <button class="flex m-auto rounded p-3 mt-4 mb-4 bg-blue-800 hover:bg-blue-900">
+                        <span class="text-white"> Subscribe </span>
+                    </button>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="flex relative w-full bg-black h-12 text-center justify-center items-center">
+                <p class="text-white text-xs font-thin"> Copyright 2022 </p>
+            </div>
+        </div>
+    </body>
+</html>
