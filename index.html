@@ -15,149 +15,233 @@
                 }
             }
         </script>
+        <style>
+            .gradient {
+                background: linear-gradient(90deg, #2563eb 0%, #93c5fd 100%);
+            }
+        </style>
     </head>
     <body>
         <div class="font-mono bg-gradient-to-l from-blue-300 to-blue-600">
             <!-- Navbar -->
-            <div class="flex h-24 shadow justify-center items-center text-center bg-black">
-                <div class="flex-1 justify-center items-start">
-                   <a href="./index.html"> <img class="m-auto w-24" src="./img/logo.png"> </a> 
+            <div class="container mx-auto flex justify-center items-center text-center">
+                <div class="flex-1">
+                   <a href="./index.html"> <img class="mx-auto w-24" src="./img/logo.png"> </a> 
                 </div>
                 <div class="hidden md:inline flex-1">
                     <ul class="inline-flex text-white">
-                        <li class="px-3 lg:px-8 rounded"> <a href="" class="rounded-md p-2 hover:bg-blue-500"> Homepage </a> </li>
-                        <li class="px-3 lg:px-8"> <a href="" class="rounded-md p-2 hover:bg-blue-500"> Docs </a> </li>
-                        <li class="px-3 lg:px-8"> <a href="#pricing" class="rounded-md p-2 hover:bg-blue-500"> Pricing </a> </li>
-                        <li class="px-3 lg:px-8"> <a href="" class="rounded-md p-2 hover:bg-blue-500"> Contact </a> </li>
+                        <li class="px-3 lg:px-8 rounded"> <a href="" class="rounded-md p-2 hover:text-slate-200"> Homepage </a> </li>
+                        <li class="px-3 lg:px-8"> <a href="" class="rounded-md p-2 hover:text-slate-200"> Docs </a> </li>
+                        <li class="px-3 lg:px-8"> <a href="#pricing" class="rounded-md p-2 hover:text-slate-200"> Pricing </a> </li>
+                        <li class="px-3 lg:px-8"> <a href="#contact" class="rounded-md p-2 hover:text-slate-200"> Contact </a> </li>
                     </ul>
                 </div>
-                <div class="flex-1 text-white text-center">
-                    <button class="rounded-3xl hover:bg-gray-900 md:hidden" onclick="navMenu()">
+                <div class="flex-1 text-center">
+                    <button class="rounded-3xl md:hidden" onclick="navMenu()">
                         <img class="m-auto w-12 p-2"  src="./img/menu.png" alt="alt menu">
                     </button>
-                    <button class="hidden rounded px-3 py-2 text-black bg-white hover:bg-blue-500 hover:text-white md:inline">
-                        <span> Login </span> 
-                    </button>
-                    <button class="hidden rounded px-3 py-2 text-black bg-white hover:bg-blue-500 hover:text-white md:inline">
+                    <button class="hidden rounded-full px-4 py-3 bg-white shadow-md md:inline text-sm hover:text-slate-600  focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                         <span> Sign Up </span> 
+                    </button>
+                    <button class="hidden rounded-full px-4 py-3 bg-white shadow-md md:inline text-sm hover:text-slate-600  focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        <span> Login </span> 
                     </button>
                 </div>
             </div>
             <!-- Mobile Nav -->
-            <div id="mobileMenu" class="hidden w-4/5 m-auto shadow bg-white justify-center items-center md:invisible">
-                <ul class="flex flex-col ">
-                    <a href=""><li class="py-1 px-8 border-b border-blue-400 hover:bg-blue-400 hover:text-white"> Homepage </li></a>
-                    <a href=""><li class="py-1 px-8 border-b border-blue-400 hover:bg-blue-400 hover:text-white"> Docs </li></a>
-                    <a href="#pricing"><li class="py-1 px-8 border-b border-blue-400 hover:bg-blue-400 hover:text-white"> Pricing </li></a>
-                    <a href=""><li class="py-1 px-8 border-b border-blue-400 hover:bg-blue-400 hover:text-white"> Contact </li></a>
-                    <a href=""><li class="py-1 px-8 border-b border-blue-400 hover:bg-blue-400 hover:text-white"> Login </li></a>
-                    <a href=""><li class="py-1 px-8 hover:bg-blue-400 hover:text-white"> Sign Up </li></a>
+            <div id="mobileMenu" class="hidden w-4/5 m-auto shadow justify-center items-center md:invisible">
+                <ul class="flex flex-col text-white">
+                    <a href=""><li class="py-2 px-8 shadow hover:bg-blue-400 hover:text-white"> Homepage </li></a>
+                    <a href=""><li class="py-2 px-8 shadow hover:bg-blue-400 hover:text-white"> Docs </li></a>
+                    <a href="#pricing"><li class="py-2 px-8 shadow hover:bg-blue-400 hover:text-white"> Pricing </li></a>
+                    <a href="#contact"><li class="py-2 px-8 shadow hover:bg-blue-400 hover:text-white"> Contact </li></a>
                 </ul>
+                <div class="flex text-center">
+                    <a class="flex-1 p-4 bg-white shadow hover:bg-slate-50" href=""> Sign Up </a>
+                    <a class="flex-1 p-4 bg-white shadow hover:bg-slate-50" href=""> Login </a>
+                </div>
             </div>
             <!-- Content Section -->
-            <div class="flex flex-col mt-16 justify-center items-center text-center">
-                <div class="flex w-full items-center md:h-[486px] bg-[url('../img/image-4.png')] bg-contain bg-no-repeat" style="background-position: 75% 40%;">
-                    <div class="flex-1 p-4 text-lg font-light">
-                        <h1 class="px-6 md:px-8 lg:px-12 text-left leading-snug text-[28px] font-bold">
-                            <p >
-                                Modern and Fast
-                                <br>
-                                Design
-                            </p>
-                        </h1>
-                        <p class="px-6 md:px-8 lg:px-12 py-4 text-left leading-snug font-thin text-white">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Vestibulum aliquam imperdiet dui, non fermentum elit lobortis non.
-                            Cras quam nisl, tempus sit amet condimentum vestibulum, euismod in ipsum.
-                        </p>
-                        <button class="rounded p-3 bg-white hover:bg-slate-100">
-                            <span class="text-sm"> Sign Up </span>
+            <div class="container pt-8 md:pt-12 mx-auto px-4 flex flex-wrap flex-col md:flex-row justify-center items-start text-center md:text-left">
+                <!-- Left -->
+                <div class="flex-1">
+                    <h1 class="my-4 leading-tight text-4xl font-bold">
+                        Modern and Fast
+                        <br>
+                        Design
+                    </h1>
+                    <p class="py-4 text-xl mb-8 leading-normal font-light text-white">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum aliquam imperdiet dui, non fermentum elit lobortis non. Cras quam nisl, tempus sit amet condimentum vestibulum, euismod in ipsum.   
+                    </p>
+                    <button class="rounded-full mx-auto py-4 px-4 shadow-xl text-base bg-white hover:bg-slate-100  focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        Buy Now!
+                    </button>
+                </div>  
+                <!-- Right -->
+                <div class="flex-1 w-full md:w-3/5 py-6 text-center">
+                    <img class="md:w-4/5" src="./img/content.png">
+                </div>
+            </div>
+            <div class="relative">
+                <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-2.000000, 44.000000)" fill="#f8fafc" fill-rule="nonzero">
+                      <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+                      <path
+                        d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                        opacity="0.100000001"
+                      ></path>
+                      <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+                    </g>
+                    <g transform="translate(-4.000000, 76.000000)" fill="#f8fafc" fill-rule="nonzero">
+                      <path
+                        d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            <!-- Pricing Section -->
+            <section id="pricing" class="bg-slate-50 text-center">
+                <h1 class="font-bold text-4xl py-12"> Pricing </h1>
+                <div class="w-full mb-4">
+                    <div class="h-1 mx-auto gradient w-64 opacity-50 rounded-t"></div>
+                </div>
+                <div class="container mx-auto flex flex-col md:flex-row py-16 text-center justify-center items-center">
+                    <div class="flex flex-col bg-white w-5/6 lg:w-1/4 mt-4 shadow rounded">
+                        <div class="border-b p-8">
+                            <h1 class="text-2xl font-bold"> 1 Month </h1>
+                        </div>
+                        <ul class="font-light">
+                            <li class="border-b py-4"> User Friendly </li>
+                            <li class="border-b py-4"> Fair Price </li>
+                            <li class="border-b py-4"> Modern Design </li>
+                            <li class="border-b py-4"> Fast Build </li>
+                            <li class="border-b py-4"> Active Support </li>
+                        </ul>
+                        <div class="border-b py-6">
+                            <h1 class="font-bold text-3xl"> $5 </h1>
+                            <button class="my-4 gradient px-4 py-4 rounded-full text-white shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"> Sign Up </button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col bg-white w-5/6 lg:w-1/3 mt-4 md:-mt-6 shadow-xl rounded z-50">
+                        <div class="border-b p-8">
+                            <h1 class="text-2xl font-bold"> 6 Month </h1>
+                        </div>
+                        <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
+                        <ul class="font-light">
+                            <li class="border-b py-4"> User Friendly </li>
+                            <li class="border-b py-4"> Fair Price </li>
+                            <li class="border-b py-4"> Modern Design </li>
+                            <li class="border-b py-4"> Fast Build </li>
+                            <li class="border-b py-4"> Active Support </li>
+                        </ul>
+                        <div class="border-b py-10">
+                            <h1 class="font-bold text-3xl"> $25 </h1>
+                            <button class="my-4 gradient px-4 py-4 rounded-full text-white shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"> Sign Up </button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col bg-white w-5/6 lg:w-1/4 mt-4 shadow rounded">
+                        <div class="border-b p-8">
+                            <h1 class="text-2xl font-bold"> 12 Month </h1>
+                        </div>
+                        <ul class="font-light">
+                            <li class="border-b py-4"> User Friendly </li>
+                            <li class="border-b py-4"> Fair Price </li>
+                            <li class="border-b py-4"> Modern Design </li>
+                            <li class="border-b py-4"> Fast Build </li>
+                            <li class="border-b py-4"> Active Support </li>
+                        </ul>
+                        <div class="border-b py-6">
+                            <h1 class="font-bold text-3xl"> $40 </h1>
+                            <button class="my-4 gradient px-4 py-4 rounded-full text-white shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"> Sign Up </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+                    <g class="wave" fill="#f8fafc">
+                      <path
+                        d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+                      ></path>
+                    </g>
+                    <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+                      <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+                        <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+                        <path
+                          d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                          opacity="0.100000001"
+                        ></path>
+                        <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" opacity="0.200000003"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+            </svg>
+            <section id="contact">
+                <div class="container flex flex-col mx-auto py-16 px-8 text-center items-center justify-center">
+                    <div class="flex-1 pt-4">
+                        <h1 class="text-2xl"> Contact with support! </h1>
+                    </div>
+                    <div class="flex-1 py-2">
+                        <p class="text-white font-light"> Find the answers to your questions. </p>
+                    </div>
+                    <div class="pt-4">
+                        <button class="rounded-full mx-auto py-2 px-2 shadow text-base bg-white hover:bg-slate-100  focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                            Contact
                         </button>
                     </div>
-                    <div class="flex-1">
-                        
-                    </div>
                 </div>
-            </div>
-            <!-- Pricing Section -->
-            <div id="pricing" class="flex flex-col mt-16 lg:flex-row md:px-16 md:py-16 w-full justify-center items-center">
-                <div class="lg:mr-14 bg-white h-auto w-3/5 lg:w-2/5 shadow">
-                    <h1 class="text-center text-xl font-bold p-6 bg-blue-800 text-white">
-                        One Month
-                        <p>
-                            5$
-                        </p>
-                    </h1>
-                    <ul>
-                        <li class="px-8 py-2 border-b"> User Friendly </li>
-                        <li class="px-8 py-2 border-b"> Fair Price </li>
-                        <li class="px-8 py-2 border-b"> Modern Design </li>
-                        <li class="px-8 py-2 border-b"> Fast Build </li>
-                        <li class="px-8 py-2 border-b"> Active Support </li>
-                    </ul>
-                    <button class="flex m-auto rounded p-3 mt-4 mb-4 bg-blue-800 hover:bg-blue-900">
-                        <span class="text-white"> Subscribe </span>
-                    </button>
-                </div>
-                <div class="mt-12 lg:mt-0 lg:mr-14 bg-white h-auto w-3/5 lg:w-2/5 shadow">
-                    <h1 class="text-center text-xl font-bold p-6 bg-blue-800 text-white">
-                        Three Month
-                        <p>
-                            12$
-                        </p>
-                    </h1>
-                    <ul>
-                        <li class="px-8 py-2 border-b"> User Friendly </li>
-                        <li class="px-8 py-2 border-b"> Fair Price </li>
-                        <li class="px-8 py-2 border-b"> Modern Design </li>
-                        <li class="px-8 py-2 border-b"> Fast Build </li>
-                        <li class="px-8 py-2 border-b"> Active Support </li>
-                    </ul>
-                    <button class="flex m-auto rounded p-3 mt-4 mb-4 bg-blue-800 hover:bg-blue-900">
-                        <span class="text-white"> Subscribe </span>
-                    </button>
-                </div>
-                <div class="mt-12 lg:mt-0 lg:mr-14 bg-white h-auto w-3/5 lg:w-2/5 shadow">
-                    <h1 class="text-center text-xl font-bold p-6 bg-blue-800 text-white">
-                        Six Month
-                        <p>
-                            20$
-                        </p>
-                    </h1>
-                    <ul>
-                        <li class="px-8 py-2 border-b"> User Friendly </li>
-                        <li class="px-8 py-2 border-b"> Fair Price </li>
-                        <li class="px-8 py-2 border-b"> Modern Design </li>
-                        <li class="px-8 py-2 border-b"> Fast Build </li>
-                        <li class="px-8 py-2 border-b"> Active Support </li>
-                    </ul>
-                    <button class="flex m-auto rounded p-3 mt-4 mb-4 bg-blue-800 hover:bg-blue-900">
-                        <span class="text-white"> Subscribe </span>
-                    </button>
-                </div>
-                <div class="mt-12 mb-12 lg:mt-0 lg:mb-0 bg-white h-auto w-3/5 lg:w-2/5 shadow">
-                    <h1 class="text-center text-xl font-bold p-6 bg-blue-800 text-white">
-                        One Year
-                        <p>
-                            35$
-                        </p>
-                    </h1>
-                    <ul>
-                        <li class="px-8 py-2 border-b"> User Friendly </li>
-                        <li class="px-8 py-2 border-b"> Fair Price </li>
-                        <li class="px-8 py-2 border-b"> Modern Design </li>
-                        <li class="px-8 py-2 border-b"> Fast Build </li>
-                        <li class="px-8 py-2 border-b"> Active Support </li>
-                    </ul>
-                    <button class="flex m-auto rounded p-3 mt-4 mb-4 bg-blue-800 hover:bg-blue-900">
-                        <span class="text-white"> Subscribe </span>
-                    </button>
-                </div>
+            </section>
+            <div class="relative">
+                <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-2.000000, 44.000000)" fill="#f8fafc" fill-rule="nonzero">
+                      <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+                      <path
+                        d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                        opacity="0.100000001"
+                      ></path>
+                      <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+                    </g>
+                    <g transform="translate(-4.000000, 76.000000)" fill="#f8fafc" fill-rule="nonzero">
+                      <path
+                        d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
             </div>
             <!-- Footer -->
-            <div class="flex relative w-full bg-black h-12 text-center justify-center items-center">
-                <p class="text-white text-xs font-thin"> Copyright 2022 </p>
-            </div>
+            <footer class="bg-slate-50">
+                <div class="container mx-auto px-8">
+                    <div class="flex flex-col md:flex-row w-full text-left">
+                        <div class="flex-1 justify-center flex-col">
+                            <img src="./img/black-logo.png" class="w-1/4 md:w-1/4 md:mx-auto">
+                        </div>
+                        <div class="flex flex-1 w-full py-4 flex-col md:flex-row">
+                            <div class="flex-1">
+                                <h1 class="text-xl font-light"> LEGAL </h1>
+                                <ul class="py-4">
+                                    <li class="py-1 inline-block mr-2 md:block"> <a href="" class="hover:text-blue-800"> Terms </a>  </li>
+                                    <li class="py-1 inline-block mr-2 md:block"> <a href="" class="hover:text-blue-800"> Privacy </a>  </li>
+                                </ul>
+                            </div>
+                            <div class="flex-1">
+                                <h1 class="text-xl font-light"> SOCIAL </h1>
+                                <ul class="py-4">
+                                    <li class="py-1 inline-block mr-2 md:block"> <a href="" class="hover:text-blue-800"> Facebook </a>  </li>
+                                    <li class="py-1 inline-block mr-2 md:block"> <a href="" class="hover:text-blue-800"> Twitter </a>  </li>
+                                    <li class="py-1 inline-block mr-2 md:block"> <a href="" class="hover:text-blue-800"> Instagram </a>  </li>
+                                    <li class="py-1 inline-block mr-2 md:block"> <a href="" class="hover:text-blue-800"> Linkedin </a>  </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
