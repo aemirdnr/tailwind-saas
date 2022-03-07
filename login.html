@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> Login | Tailwind SaaS / github.com/aemirdnr </title>
+        <link href="./dist/output.css" rel="stylesheet">
+        <style>
+            .gradient {
+                background: linear-gradient(90deg, #2563eb 0%, #93c5fd 100%);
+            }
+        </style>
+    </head>
+    <body class="font-mono gradient">
+        <div class="flex container mx-auto h-full w-full justify-center content-center items-center">
+            <div class="flex flex-col bg-white px-14 py-8 rounded-md shadow-lg">
+                <div class="flex flex-col">
+                    <a href="./index.html" class="m-auto"><img src="./img/black-logo.png" class="mx-auto w-32"></a> 
+                    <div class="w-full my-4">
+                        <div class="h-1 mx-auto gradient w-80 opacity-50 rounded-t"></div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex flex-col">
+                        <label class="p-4 text-left"> E-MAIL </label>
+                        <input type="email" placeholder="E-Mail" class="p-4 w-full bg-slate-100 rounded-xl shadow">
+                    </div>
+                    <div class="flex flex-col mt-6">
+                        <label for="" class="p-4"> PASSWORD </label>
+                        <input type="password" placeholder="Password" class="p-4 bg-slate-100 rounded-xl shadow">  
+                    </div>
+                    <div class="flex justify-center mt-2">
+                        <label class="cursor-pointer p-4">
+                            <input type="checkbox" name="" id="" class="w-5 h-5">                         
+                            <span class="text-sm"> Remember me </span>
+                        </label>
+                    </div>
+                    <button class="gradient rounded-full text-xl px-10 py-2 mt-2 text-white shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"> Sign In </button>
+                    <a href="" class="mt-4 font-light text-center text-sm hover:text-blue-600"> Sign Up </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
